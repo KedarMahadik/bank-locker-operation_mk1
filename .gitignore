@@ -1,0 +1,23 @@
+# Core Exclusions
+node_modules/
+venv/
+.env
+.env.*
+
+# Frontend (React + Vite)
+/frontend/dist/
+/frontend/npm-debug.log*
+/frontend/yarn-debug.log*
+
+# Backend (FastAPI + Python)
+__pycache__/
+*.log
+*.sqlite
+*.sqlite3
+*.db
+/backend/ml_models/
+
+# IDE and OS files
+.vscode/
+.idea/
+.DS_Store
