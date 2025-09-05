@@ -1,0 +1,32 @@
+/*
+  This file provides the most basic, foundational styles and resets for the application.
+  More specific styling (colors, fonts, component styles) is handled by theme.js and main.css.
+*/
+
+/* 1. Global Font and Box Sizing Reset */
+:root {
+  /* Set the primary font family from your theme as the default */
+  font-family: 'Inter', 'Roboto', system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  /* Improved text rendering for clarity */
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* 2. Body Reset */
+body {
+  margin: 0; /* Remove default browser margin */
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensure the body takes up at least the full viewport height */
+}
+
+/*
+  NOTE: All other styles like colors, button styles, and link styles are now
+  handled by the MUI ThemeProvider and your custom components (Button.jsx, etc.).
+  This prevents conflicts and keeps your styling centralized in theme.js.
+*/

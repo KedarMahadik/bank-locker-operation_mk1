@@ -1,0 +1,92 @@
+/* --- 
+  main.css
+  This file provides global styles, CSS variables derived from your theme.js, 
+  and helpful utility classes for the Bank Locker application.
+--- */
+
+/* 1. ROOT VARIABLES ======================================================= */
+/* We define CSS variables here to match your MUI theme for use in custom CSS. */
+:root {
+  /* Color Palette */
+  --color-primary: #0D47A1;    /* Trust & Security Blue */
+  --color-secondary: #2E7D32;  /* Success & Approval Green */
+  --color-error: #D32F2F;      /* Error Red */
+  --color-warning: #FFA000;    /* Warning Amber */
+  --color-text-primary: #212121; /* Dark Charcoal for text */
+  --color-text-secondary: #757575;/* Medium Gray for subtext */
+  --color-background: #F5F5F5;    /* Light Gray for page backgrounds */
+  --color-paper: #FFFFFF;         /* White for cards and modals */
+  --color-border: #E0E0E0;      /* A slightly lighter border color */
+
+  /* Typography */
+  --font-family-main: 'Inter', 'Roboto', -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+
+  /* Spacing & Borders */
+  --border-radius: 8px; /* Matches your MUI theme */
+}
+
+
+/* 2. GLOBAL RESETS & BODY STYLES ========================================== */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-family-main);
+  background-color: var(--color-background);
+  color: var(--color-text-primary);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Ensure the root element takes up the full height for flex layouts */
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+
+/* 3. TYPOGRAPHY & LINKS =================================================== */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+}
+
+a {
+  color: var(--color-primary);
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #1976D2; /* A slightly lighter blue for hover */
+}
+
+
+/* 4. UTILITY CLASSES ====================================================== */
+/* Add these classes to any element for quick styling. */
+
+.text-center {
+  text-align: center;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+/* A helper for creating a centered flex container */
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
